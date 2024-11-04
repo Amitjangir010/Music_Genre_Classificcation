@@ -1,26 +1,74 @@
-# Music Genre Classification using Deep Learning
+# 🎵 Music Genre Classification using Deep Learning
 
-1. **Data Preparation**: Loading and preprocessing audio files for model training.
-2. **Model Building**: Defining and compiling the neural network model for audio classification.
-3. **Model Training**: Training the model on the prepared data with early stopping to prevent overfitting.
-4. **Model Evaluation**: Evaluating the trained model's performance on the test dataset and interpreting the results.
-5. **Conclusion**: Summary of findings and potential areas.
+A deep learning project that classifies music into different genres using neural networks, achieving 63% accuracy across 10 different music genres.
 
-## Dataset
-The dataset consists of audio files categorized into different music genres such as blues, classical, country, disco, hiphop, jazz, metal, pop, reggae, and rock.
+## 📊 Project Overview
 
-## Requirements
-- Python 3.x
-- TensorFlow
+This project uses deep learning to classify music into different genres:
+- Blues
+- Classical  
+- Country
+- Disco
+- Hip-hop
+- Jazz
+- Metal
+- Pop
+- Reggae
+- Rock
+
+## 🔑 Key Results
+
+- Overall Accuracy: 63%
+- Best Performing Genres:
+  - Metal: 96% precision, 92% recall
+  - Classical: 81% precision, 100% recall 
+  - Blues: 70% precision, 80% recall
+
+## 📈 Model Performance
+
+### Genre-wise Performance
+```
+              Precision    Recall  F1-score
+Metal            0.96       0.92     0.94
+Classical        0.81       1.00     0.90
+Blues            0.70       0.80     0.74
+Pop              0.71       0.77     0.74
+Jazz             0.73       0.73     0.73
+Country          0.64       0.52     0.57
+Rock             0.50       0.62     0.55
+Disco            0.45       0.48     0.47
+Reggae           0.45       0.22     0.29
+Hip-hop          0.30       0.40     0.34
+```
+
+## 🛠️ Technical Implementation
+
+### Data Processing
+- Audio feature extraction using librosa
+- Data normalization and preprocessing
+- Train-test split for model evaluation
+
+### Model Architecture
+- Neural network with multiple layers
+- Early stopping to prevent overfitting
+- Categorical cross-entropy loss function
+- Adam optimizer
+
+## 📦 Requirements
 - librosa
-- pandas
+- matplotlib 
 - numpy
-- scikit-learn
+- pandas
 - plotly
-- seaborn
+- scikit-learn
+- tensorflow
 
-## Usage
-1. Clone the repository to your local machine.
-2. Install the required dependencies using `pip install -r requirements.txt`.
-3. Open the Jupyter Notebook `Project_Genres.ipynb`.
-4. Follow the instructions in the notebook to execute each cell and run the code.
+## 🎯 Future Improvements
+- Collect more training data
+- Experiment with different model architectures
+- Add attention mechanism
+- Implement data augmentation
+- Support more genres
+
+---
+Made with ❤️ by Amit Jangir
